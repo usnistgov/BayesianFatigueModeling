@@ -5,4 +5,4 @@ where above, $\alpha(S)$ is modeled as a logistic function of $S$.
 
 Then, for the observed value $N$, with probability $\alpha(S)$,
 $$\frac{-1}{N} = \beta_0 + \beta_1 S + \epsilon$$
-(where $\epsilon \sim N(0,\sigma^2)$), otherwise, $N=10^7$.
+(where $\epsilon$ is assumed to be a mean zero Gaussian random variable). With probability $1 - \alpha(S)$, $N=10^7$.
