@@ -3,8 +3,6 @@ This repository contains code to fit a Bayesian model of stress vs. lifetime fat
 $$\alpha(S) := p(log(N)=7 | S) = \frac{1}{1 + e^{-(b_0 + b_1 S)}}$$ 
 where above, $\alpha(S)$ is modeled as a logistic function of $S$.
 
-For the observed value $N$, with probability $\alpha(S)$,
-$$
-\frac{-1}{N} = \beta_0 + \beta_1 S + \epsilon
-$$
+Then, for the observed value $N$, with probability $\alpha(S)$,
+$$\frac{-1}{N} = \beta_0 + \beta_1 S + \epsilon$$
 (where $\epsilon \sim N(0,\sigma^2)$), or $N=10^7$ otherwise.
