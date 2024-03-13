@@ -6,3 +6,8 @@ where above, $\alpha(S)$ is modeled as a logistic function of $S$.
 Then, for the observed value $N$, with probability $\alpha(S)$,
 $$\frac{-1}{N} = \beta_0 + \beta_1 S + \epsilon$$
 (where $\epsilon$ is assumed to be a mean zero Gaussian random variable). With probability $1 - \alpha(S)$, $N=10^7$.
+
+Using a Bayesian approach has several advantages over maximum likelihood in this case. Of particular note are:
+ * uncertainty estiamtes based on the posterior distribution appear much more stable and reliable than, e.g., inverting the fisher information matrix
+ * since the dataset size is small, the regularization effect of the Bayesian model is quite helpful, especially considering the complexity of the model
+ * there is no appeal to asymptotics for uncertainties of parameters estimates; we get the exact posterior distribution (up to Monte Carlo error)
